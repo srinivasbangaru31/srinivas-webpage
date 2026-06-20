@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>CodeKamikaze</title>
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    background:#f5f5f5;
+    color:#333;
+    line-height:1.6;
+}
+
+.container{
+    width:97%;
+    margin:10px auto;
+}
+
+/* Header */
+.hero{
+    background:#0d6efd;
+    color:white;
+    padding:30px;
+    border-radius:4px;
+    box-shadow:0 1px 3px rgba(0,0,0,0.15);
+    margin-bottom:12px;
+}
+
+.hero h1{
+    font-size:40px;
+    font-weight:700;
+    margin-bottom:10px;
+}
+
+.hero p{
+    font-size:14px;
+    opacity:0.95;
+}
+
+/* Cards */
+.card{
+    background:#fff;
+    border:1px solid #e5e5e5;
+    border-radius:4px;
+    padding:30px;
+    margin-bottom:12px;
+    box-shadow:0 1px 2px rgba(0,0,0,0.05);
+}
+
+.card h2{
+    margin-bottom:20px;
+    color:#222;
+    font-size:36px;
+}
+
+.card p{
+    margin-bottom:15px;
+}
+
+.card ul{
+    margin-left:35px;
+    margin-bottom:20px;
+}
+
+.card li{
+    margin-bottom:8px;
+}
+
+/* Button */
+.btn{
+    background:#e9ecef;
+    border:1px solid #ced4da;
+    padding:8px 15px;
+    border-radius:4px;
+    cursor:pointer;
+    font-size:14px;
+}
+
+.btn:hover{
+    background:#dfe3e6;
+}
+
+/* Link */
+a{
+    color:#0d6efd;
+}
+
+a:hover{
+    text-decoration:none;
+}
+
+/* Footer */
+footer{
+    margin-top:20px;
+    color:#666;
+    font-size:14px;
+    padding-bottom:20px;
+}
+
+@media(max-width:768px){
+
+    .hero h1{
+        font-size:28px;
+    }
+
+    .card h2{
+        font-size:24px;
+    }
+
+    .card{
+        padding:20px;
+    }
+}
+</style>
+
+<script>
+function showAlert() {
+    alert("Hello from CodeKamikaze!");
+}
+</script>
+
+</head>
+
+<body>
+
+<div class="container">
+
+    <header class="hero">
+        <h1>Welcome! to CodeKamikaze</h1>
+        <p>Simple HTML example with a bit of interactivity.</p>
+    </header>
+
+    <section class="card">
+        <h2>About this page</h2>
+
+        <p>
+            This page demonstrates basic HTML structure, CSS, and a tiny JavaScript interaction.
+        </p>
+
+        <ul>
+            <li>Header, main content, footer</li>
+            <li>Styled card</li>
+            <li>Button that shows an alert</li>
+        </ul>
+
+        <button class="btn" onclick="showAlert()">Click me</button>
+    </section>
+
+    <section class="card">
+        <h2>Contact</h2>
+
+        <p>
+            If this were a real site you'd add a form. Here's a placeholder link:
+        </p>
+
+        <a href="https://example.com" target="_blank">
+            Visit example.com
+        </a>
+    </section>
+
+    <footer>
+        © 2025 Simple Example — Built with HTML.
+    </footer>
+
+</div>
+
+</body>
+</html>
